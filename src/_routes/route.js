@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import { Route, Switch } from 'react-router-dom';
 
-import Home from '../views/home/Home';
-import Logout from '../views/Logout';
-import devextreme from '../views/devextreme';
+import Home from '../_components/Home/Home';
+import Logout from '../_components/Logout/Logout';
+import devextreme from '../_components/devextreme';
 
-import User from '../views/User/User';
-import Role from '../views/Role/Role';
-// import User from '../views/user/User';
-// import MasterUser from '../views/Master/User/User';
-import UnathorizedPage from '../views/other/UnathorizedPage';
+import UnathorizedPage from '../_components/Other/UnathorizedPage';
+import UserContainer from "../_components/User/UserContainer";
+import RoleContainer from "../_components/Role/RoleContainer";
 
 
 export class Routes extends Component  {
@@ -42,9 +40,8 @@ export class Routes extends Component  {
                 <Route exact path ='/' component={(this.checkAuthorized(['root','admin', 'user']) === true) ? Home : UnathorizedPage} />
                 <Route exact path ='/logout' component={Logout} />
                 <Route exact path ='/dev' component={devextreme} />
-                <Route exact path ='/Role' component={Role} />
-                
-                <Route exact path ='/User' component={User} />
+                <Route exact path ='/Role' component={RoleContainer} />
+                <Route exact path ='/User' component={UserContainer} />
             </Switch>
         );
     }

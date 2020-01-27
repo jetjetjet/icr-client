@@ -11,7 +11,7 @@ import broker from './_utilization/broker';
 import './_assets/css/dashforge.css';
 import './_assets/css/app.css';
 
-import MainLayout from './_layout/MainLayout';
+import MainContainer from './_components/Main/MainContainer';
 
 
 
@@ -36,7 +36,7 @@ class App extends Component {
     return (<HashRouter>
       <Switch>
         {/* <Route exact path="/login" name="Login Page" component={LoginLayout} /> */}
-        <Route path="" name="Home" component={MainLayout} />
+        <Route path="" name="Home" component={MainContainer} />
       </Switch>
       
     </HashRouter>);

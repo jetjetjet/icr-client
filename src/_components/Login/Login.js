@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect} from "remx";
 
-import broker from '../_utilization/broker';
-import authStore from '../_utilization/auth';
+import broker from '../../_utilization/broker';
+import authStore from '../../_utilization/auth';
 
-import MainLayout from './MainLayout';
+import Main from '../Main/Main'
 
-import img_15 from '../_assets/img/img15.png';
+import img_15 from '../../_assets/img/img15.png';
 
-import '../_assets/css/dashforge.auth.css';
+import '../../_assets/css/dashforge.auth.css';
 
 class LoginLayout extends Component {
     constructor(props) {
@@ -77,7 +77,7 @@ class LoginLayout extends Component {
 
     render(){
         if (this.props.login) {
-            return (<MainLayout />)
+            return (<Main />)
         } else {
             return(
                 <div className="App">

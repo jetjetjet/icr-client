@@ -5,9 +5,9 @@ import React, { Component } from 'react';
 
 class Home extends Component {
 
-    render(){
-        return(
-            <div className="content-body">
+  render() {
+    return (
+      <div className="content-body">
         <div className="container pd-x-0">
           <div className="d-sm-flex align-items-center justify-content-between mg-b-20 mg-lg-b-25 mg-xl-b-30">
             <div>
@@ -35,8 +35,8 @@ class Home extends Component {
                   <p className="tx-11 tx-color-03 mg-b-0"><span className="tx-medium tx-success">1.2% <i className="icon ion-md-arrow-up"></i></span></p>
                 </div>
                 <div className="chart-three">
-                    <div id="flotChart3" className="flot-chart ht-30"></div>
-                  </div>
+                  <div id="flotChart3" className="flot-chart ht-30"></div>
+                </div>
               </div>
             </div>
             <div className="col-sm-6 col-lg-3 mg-t-10 mg-sm-t-0">
@@ -47,8 +47,8 @@ class Home extends Component {
                   <p className="tx-11 tx-color-03 mg-b-0"><span className="tx-medium tx-danger">0.7% <i className="icon ion-md-arrow-down"></i></span></p>
                 </div>
                 <div className="chart-three">
-                    <div id="flotChart4" className="flot-chart ht-30"></div>
-                  </div>
+                  <div id="flotChart4" className="flot-chart ht-30"></div>
+                </div>
               </div>
             </div>
             <div className="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
@@ -59,8 +59,8 @@ class Home extends Component {
                   <p className="tx-11 tx-color-03 mg-b-0"><span className="tx-medium tx-danger">0.3% <i className="icon ion-md-arrow-down"></i></span></p>
                 </div>
                 <div className="chart-three">
-                    <div id="flotChart5" className="flot-chart ht-30"></div>
-                  </div>
+                  <div id="flotChart5" className="flot-chart ht-30"></div>
+                </div>
               </div>
             </div>
             <div className="col-sm-6 col-lg-3 mg-t-10 mg-lg-t-0">
@@ -71,15 +71,15 @@ class Home extends Component {
                   <p className="tx-11 tx-color-03 mg-b-0"><span className="tx-medium tx-success">2.1% <i className="icon ion-md-arrow-up"></i></span></p>
                 </div>
                 <div className="chart-three">
-                    <div id="flotChart6" className="flot-chart ht-30"></div>
-                  </div>
+                  <div id="flotChart6" className="flot-chart ht-30"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-        );
-    }
+    );
+  }
 
 }
 
